@@ -1,0 +1,213 @@
+header {
+    position: absolute;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 9;
+}
+
+.layer {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+    color: #eee;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+nav a {
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 10px 13px;
+    font-weight: 400;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+.menu li.active a {
+    color: #fff;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    padding: 10px;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 11px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.teaminfo {
+    color: white;
+    /* padding: 0 4em 0 0; */
+}
+
+.teamm img {
+    width: 18em;
+    /* height: 20em; */
+    /* margin: 1em 1em 0m 1em; */
+}
+
+.ftlayer {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+    margin: 0em 1em 0em 0em;
+}
+
+footer ul li {
+    display: inline-block;
+    color: white;
+}
+
+.footertitle a {
+    font-size: 33px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #eee;
+}
+
+.footertext p {
+    color: #aaa;
+}
+
+.servicesinner {
+    border: 2px solid #3369e7;
+    margin-left: 35px;
+    background: #fff
+}
+
+.servicesimg {
+    float: left;
+    margin-left: -36px;
+    margin-right: 22px;
+    margin-top: 28px;
+}
+
+.servicesimg img {
+    width: 68px;
+}
+
+.servicestext {
+    padding-right: 10px;
+    overflow: hidden;
+    padding: 28px 0 25px;
+}
+
+.servicestext h4 {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.positionimage img {
+    position: absolute;
+    top: 16%;
+    left: 0%;
+    bottom: 0%;
+    width: 20%;
+    z-index: -1;
+}
+
+.serviceswrapper:hover .servicesinner {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid transparent;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.servicestext p {
+    margin-bottom: 0;
+}
+
+.services p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #666;
+}
+
+.services {
+    position: relative;
+    z-index: 2;
+}
