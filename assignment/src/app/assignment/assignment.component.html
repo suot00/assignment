@@ -1,3 +1,5 @@
+<router-outlet></router-outlet>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +11,8 @@
 </head>
 
 <body>
+
+
     <header>
         <nav class="navbar navbar-expand-lg " style="padding-left: 10em;padding-right: 10em;">
             <a class="navbar-brand" href="index.html" style="padding-right: 4em;padding-left: 4em;"><img
@@ -40,7 +44,7 @@
                             Tài Khoản
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" routerLink="/dangnhap" routerLinkActive="active"> Đăng Nhập </a>
+                            <a class="dropdown-item" routerLink="/login" routerLinkActive="active"> Đăng Nhập </a>
                             <a class="dropdown-item" routerLink="/dangki" routerLinkActive="active">Đăng Kí</a>
                             <a class="dropdown-item" href="#"> Quên Mật Khẩu </a>
                             <div class="dropdown-divider"></div>
@@ -294,7 +298,7 @@
     </section>
 
     <section class="team" id="team">
-        <div class="container " style="margin-top: 7em; margin-bottom: 2em;">
+        <div class="container" style="margin-top: 7em; margin-bottom: 2em;">
             <h2 style="margin-bottom: 2em;">Our Teachers</h2>
             <div class="row">
                 <div class="col-sm-3 teamm">
@@ -354,8 +358,8 @@
                         <input style="width: 30em;height: 50px;margin:3em 0 0 5em;" type="email" class="ipsearch"
                             placeholder="Enter your email here" aria-label="Recipient's username"
                             aria-describedby="basic-addon2">
-                        <div class="input-group-append" style="">
-                            <button type="button" class="" style="background: black;margin-top: 3em;"><span
+                        <div class="input-group-append">
+                            <button type="button" style="background: black;margin-top: 3em;"><span
                                     class="fa fa-paper-plane" aria-hidden="true"></span></button>
                         </div>
                     </div>
