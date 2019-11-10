@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-assignment',
-  templateUrl: './assignment.component.html',
-  styleUrls: ['./assignment.component.css']
+  selector: 'app-contactasm',
+  templateUrl: './contactasm.component.html',
+  styleUrls: ['./contactasm.component.css']
 })
-export class AssignmentComponent implements OnInit {
+export class ContactasmComponent implements OnInit {
   img =
     {
       mail: '/assets/images/mail.png',
@@ -21,7 +21,6 @@ export class AssignmentComponent implements OnInit {
       team44: 'assets/images/s5.png'
 
     }
-
   constructor() { }
 
   ngOnInit() {

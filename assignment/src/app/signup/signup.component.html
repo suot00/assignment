@@ -21,8 +21,8 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/contactasm" routerLinkActive="active"> Liên Hệ - Góp ý </a>
                 </li>
-                <!-- 
-                <li class="nav-item">
+
+                <!-- <li class="nav-item">
                     <a class="nav-link" routerLink="/hoidap" routerLinkActive="active"> Hỏi Đáp</a>
                 </li> -->
 
@@ -47,58 +47,37 @@
 
     </nav>
     <div class="container">
-        <br>
         <div class="row">
-            <div class="col-md-8">
-                <div class="col-md-6" style="float: left" *ngFor="let item of lists ">
-                    <div class="card">
-                        <img src="../../assets/images/{{item.Logo}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <button type="button" class="btn btn-secondary" onclick="ttt()"
-                                routerLink="/tracnghiem/{{item.Id}}">{{item.Name}}
-                            </button>
-                        </ul>
-                    </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form action="/action_page.php">
+                    <div class="container">
+                        <h1 style="text-align: center">Sign Up</h1>
 
-                </div>
-                <!-- 
-                        <div class="row">
-                            <pagination-controls (pageChange)="p = $event"></pagination-controls>    
-                        </div> -->
-            </div>
-            <!-- end col-md-8 -->
+                        <hr>
 
-            <div class="col-md-4">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
 
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <ul class="list-group">
-                                <li class="list-group-item" data-toggle="collapse" data-target="#demo"><i
-                                        class="fa fa-align-left" style="font-size:24px"> Danh Mục Môn Học</i>
-                                    <div id="demo" class="collapse">
-                                        <ul class="list-group" *ngFor="let item of lists">
-                                            <a href="#" class="list-group-item list-group-item-action">{{item.Name}}</a>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
 
-                                        </ul>
-                                    </div>
-                            </ul>
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="submit" class="signupbtn">Sign Up</button>
                         </div>
                     </div>
-
-
-                </div>
-                <!-- end card accordion -->
+                </form>
             </div>
-            <!-- end col-md-4 -->
+            <div class="col-sm-3"></div>
         </div>
-
-        <br>
-
-
     </div>
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
 

@@ -21,8 +21,8 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/contactasm" routerLinkActive="active"> Liên Hệ - Góp ý </a>
                 </li>
-                <!-- 
-                <li class="nav-item">
+
+                <!-- <li class="nav-item">
                     <a class="nav-link" routerLink="/hoidap" routerLinkActive="active"> Hỏi Đáp</a>
                 </li> -->
 
@@ -34,7 +34,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" routerLink="/login" routerLinkActive="active"> Đăng Nhập </a>
-                    <a class="dropdown-item" routerLink="/dangki" routerLinkActive="active">Đăng Kí</a>
+                    <a class="dropdown-item" routerLink="/signup" routerLinkActive="active">Đăng Kí</a>
                     <a class="dropdown-item" href="#"> Quên Mật Khẩu </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#"> Đăng Xuất </a>
@@ -46,60 +46,54 @@
         </div>
 
     </nav>
-    <div class="container">
-        <br>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="col-md-6" style="float: left" *ngFor="let item of lists ">
-                    <div class="card">
-                        <img src="../../assets/images/{{item.Logo}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <button type="button" class="btn btn-secondary" onclick="ttt()"
-                                routerLink="/tracnghiem/{{item.Id}}">{{item.Name}}
-                            </button>
-                        </ul>
-                    </div>
+    <h2 style="text-align: center;"> Contact Us</h2>
 
+
+    <div class="container" ;">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
                 </div>
-                <!-- 
-                        <div class="row">
-                            <pagination-controls (pageChange)="p = $event"></pagination-controls>    
-                        </div> -->
-            </div>
-            <!-- end col-md-8 -->
-
-            <div class="col-md-4">
-
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <ul class="list-group">
-                                <li class="list-group-item" data-toggle="collapse" data-target="#demo"><i
-                                        class="fa fa-align-left" style="font-size:24px"> Danh Mục Môn Học</i>
-                                    <div id="demo" class="collapse">
-                                        <ul class="list-group" *ngFor="let item of lists">
-                                            <a href="#" class="list-group-item list-group-item-action">{{item.Name}}</a>
-
-                                        </ul>
-                                    </div>
-                            </ul>
-                        </div>
-                    </div>
-
-
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 </div>
-                <!-- end card accordion -->
             </div>
-            <!-- end col-md-4 -->
-        </div>
-
-        <br>
-
-
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </div>
+
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
 
 

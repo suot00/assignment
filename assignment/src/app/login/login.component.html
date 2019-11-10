@@ -1,4 +1,109 @@
-<!DOCTYPE html>
+<div class="container">
+    <div class="banner" style="background-color: black;">
+        <img src="{{img.banner}}" style="width: 100%;  height:20em ; object-fit: unset; ">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="{{img.logo}}" style="width: 3em; height: 3em; border-radius:50% ;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " routerLink="/assignment" routerLinkActive="active">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/aboutasm" routerLinkActive="active">Giới Thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contactasm" routerLinkActive="active"> Liên Hệ - Góp ý </a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/hoidap" routerLinkActive="active"> Hỏi Đáp</a>
+                </li> -->
+
+            </ul>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Tài Khoản
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/login" routerLinkActive="active"> Đăng Nhập </a>
+                    <a class="dropdown-item" routerLink="/signup" routerLinkActive="active">Đăng Kí</a>
+                    <a class="dropdown-item" href="#"> Quên Mật Khẩu </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"> Đăng Xuất </a>
+                    <a class="dropdown-item" href="#"> Đổi Mật Khẩu</a>
+                    <a class="dropdown-item" href="#"> Cập Nhật Tài Khoản</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-3">
+
+            </div>
+            <div class=" col-sm-6">
+                <form action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <img src="https://www.w3schools.com/howto/img_avatar2.png" style="width: 100px" height="100px"
+                            alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required [(ngModel)]="uname"
+                            [ngModelOptions]="{standalone: true}">
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required [(ngModel)]="psw"
+                            [ngModelOptions]="{standalone: true}">
+
+                        <button type="submit" value="Login" (click)='Check()'
+                            [routerLink]="['/danhmucmon']">Login</button>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container">
+                        <button routerLink="/dangki" routerLinkActive="active" type="button" class="cancelbtn">Sign
+                            up</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class=" col-sm-3">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+
+
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <span>Create By : <b>Suot00</b></span>
+    </footer>
+
+
+    <!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,7 +147,7 @@
                             Tài Khoản
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" routerLink="/dangnhap" routerLinkActive="active"> Đăng Nhập </a>
+                            <a class="dropdown-item" routerLink="/login" routerLinkActive="active"> Đăng Nhập </a>
                             <a class="dropdown-item" routerLink="/dangki" routerLinkActive="active">Đăng Kí</a>
                             <a class="dropdown-item" href="#"> Quên Mật Khẩu </a>
                             <div class="dropdown-divider"></div>
@@ -139,4 +244,4 @@
 
 </body>
 
-</html>
+</html> -->

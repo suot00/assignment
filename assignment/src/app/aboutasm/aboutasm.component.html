@@ -1,0 +1,138 @@
+<div class="container">
+    <div class="banner" style="background-color: black;">
+        <img src="{{img.banner}}" style="width: 100%;  height:20em ; object-fit: unset; ">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="{{img.logo}}" style="width: 3em; height: 3em; border-radius:50% ;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " routerLink="/assignment" routerLinkActive="active">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/aboutasm" routerLinkActive="active">Giới Thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contactasm" routerLinkActive="active"> Liên Hệ - Góp ý </a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/hoidap" routerLinkActive="active"> Hỏi Đáp</a>
+                </li> -->
+
+            </ul>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Tài Khoản
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/login" routerLinkActive="active"> Đăng Nhập </a>
+                    <a class="dropdown-item" routerLink="/signup" routerLinkActive="active">Đăng Kí</a>
+                    <a class="dropdown-item" href="#"> Quên Mật Khẩu </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"> Đăng Xuất </a>
+                    <a class="dropdown-item" href="#"> Đổi Mật Khẩu</a>
+                    <a class="dropdown-item" href="#"> Cập Nhật Tài Khoản</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <section id="about">
+        <div class="container ">
+            <h2 style="margin: 1em 0 2em 0;"> Build Your Career With Our Education System</h2>
+            <div class="row">
+
+
+                <div class="col-sm-3">
+                    <div style="background-image: url('/assets/images/bb.jpg') ;height: 24em; width: 18em; ">
+                        <div class="ftlayer">
+                            <div class="teaminfo " style="padding: 17.75em 3em 1em 9em;">
+                                <h2> Facillities </h2>
+                                <span> Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div style="background-image: url('/assets/images/bg1.jpg') ;height: 24em; width: 18em; ">
+                        <div class="ftlayer">
+                            <div class="teaminfo " style="padding: 17.75em 3em 1em 9em;">
+                                <h2> Graduation </h2>
+                                <span> Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div style="background-image: url('/assets/images/bg2.jpg') ;height: 24em;width: 18em;  ">
+                        <div class="ftlayer">
+                            <div class="teaminfo " style="padding: 17.75em 3em 1em 9em;">
+                                <h2> Learning </h2>
+                                <span> Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+
+                    <div style="background-image: url('/assets/images/bg3.jpg') ;height: 24em;width: 18em;  ">
+                        <div class="ftlayer">
+                            <div class="teaminfo " style="padding: 17.75em 3em 1em 9em;">
+                                <h2> Success </h2>
+                                <span> Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5" style="margin-top: 2em;">
+                        <p>Vivamus mattis ex massa. Morbi sed dui imperdiet, tinci dunt libero a, sagittis enim. Donec
+                            lobortis cursuser uti justo, at
+                            eleifend eros init ultricies sed. Vivamus efficit ur urna vitae tempus aliquam. Proin
+                            aliquet dictum est molestie maximus sapien leo cursus rhoncus.</p>
+                    </div>
+                    <div class="col-sm-1 imgg">
+                        <img src="{{img.team11}}">
+                        <img src="{{img.team22}}">
+                    </div>
+                    <div class="col-sm-1 imgg">
+                        <img src="{{img.team33}}">
+                        <img src="{{img.team44}}">
+                    </div>
+                    <div class="col-sm-5" style="margin-top: 2em;">
+                        <p> Vivamus efficitur ur vitae tempus aliquam. Proin aliquet dictum est, molestie maximus sapien
+                            maximus a.
+                            Fuscer eleifend. convallis vitae enim eu egestas. Quisque placi rati enim nibh, vitae
+                            faucibus odio vestibulum pretium. Sed malesuada
+                            libero sed commodo varius.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+
+
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <span>Create By : <b>Suot00</b></span>
+    </footer>

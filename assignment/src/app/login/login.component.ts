@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
     {
       mail: '/assets/images/mail.png',
       logo: '/assets/images/s2.png',
-      banner: 'assets/images/banner.jpg',
+      banner: 'assets/images/banners.jpg',
       team1: 'assets/images/team1.jpg',
       team2: 'assets/images/team2.jpg',
       team3: 'assets/images/team3.jpg',
@@ -26,8 +26,8 @@ export class LoginComponent implements OnInit {
     }
 
   list: any;
-  pass;
-  user;
+  psw;
+  uname;
   check = true;
   constructor(private http: HttpClient) { }
 
@@ -39,19 +39,17 @@ export class LoginComponent implements OnInit {
   }
   getData() {
     return this.http.get('../../assets/db/Students.json')
-    //console.log()
+
   }
   Check() {
     this.check = true;
     for (let i = 0; i < this.list.length; ++i) {
-      if (this.user == this.list[i].username && this.pass == this.list[i].password) {
+      if (this.uname == this.list[i].username && this.psw == this.list[i].password) {
         alert('Right');
       }
       else this.check = false;
     }
-    if (!this.check) {
-      alert('Wrong')
-    }
+    
   }
 
 }
