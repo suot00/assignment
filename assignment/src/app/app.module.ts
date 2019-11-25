@@ -37,7 +37,6 @@ const appRoutes: Routes = [
     AssignmentComponent,
     LoginComponent,
     DanhmucmonComponent,
-    // NgxPaginationModule,
     TracnghiemComponent,
     AboutasmComponent,
     MenuasmComponent,
@@ -53,7 +52,6 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule,
     NgxPaginationModule,
-
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true })

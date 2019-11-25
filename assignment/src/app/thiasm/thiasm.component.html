@@ -1,20 +1,50 @@
 <div class="container">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 pt-3">
 
 
-    <div class="card " *ngFor="let item of lists">
-        <div class="card-header">
-            {{item.Text}}
-        </div>
-        <div class="card-body">
-            <div class="card-body ">
-                <label class="container " *ngFor="let item2 of item.Answers ">
-                    <input type="radio" name="radio" value="{{item2.Id }}" [(ngModel)]="item._answerId">
-                    <span class="checkmark"> {{item2.Text}}</span>
-                </label>
+                <div class="card" *ngFor="let item of lists |paginate: { itemsPerPage: 1, currentPage: p }">
+                    <div class="card-header">
+                        <p>Thời Gian Làm Bài</p>
+                        <span id='h'></span> :
+                        <span id='m'></span> :
+                        <span id='s'></span>
 
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote " style="text-align: center;">
+                            <p class="float-left">
+                                {{item.Text}}
+
+                            </p>
+                        </blockquote>
+
+                    </div>
+                    <hr style="width: 80%; margin: 0 auto">
+                    <div class="card-body ">
+                        <label class="container " *ngFor="let item2 of item.Answers ">
+                            <input type="radio" name="radio" value="{{item2.Id }}" [(ngModel)]="answers[p-1]">
+                            <span class="checkmark"> {{item2.Text}}</span>
+                        </label>
+                    </div>
+
+
+                </div>
+                <div class="card-header " style="text-align: center;">
+                    <p>MARKS: {{mark}}/80</p>
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div>
+                <button type="button" style="margin:1em 1em 0 30em"
+                    class="btn {{isEdit? 'btn-danger' : 'btn-primary disable'}}"
+                    (click)='isEdit? start() : stop() '>{{isEdit? 'Bắt Đầu' : 'Kết Thúc'}}</button>
+                <button class="btn btn-danger " style="margin-top: 1em;" (click)='submit()'>Nộp bài</button>
             </div>
 
         </div>
+
     </div>
-    <button class="btn btn-danger mt-3" (click)=submit()>Nộp Bài </button>
+
+
 </div>

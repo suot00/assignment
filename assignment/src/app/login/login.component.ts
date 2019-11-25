@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router, Params } from '@angular/router';
+import { Router, Params, RouterLink } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 
 @Component({
@@ -45,11 +45,12 @@ export class LoginComponent implements OnInit {
     this.check = true;
     for (let i = 0; i < this.list.length; ++i) {
       if (this.uname == this.list[i].username && this.psw == this.list[i].password) {
-        alert('Right');
+        alert('dang nhap thanh cong');
+
       }
       else this.check = false;
     }
-    
+
   }
 
 }
