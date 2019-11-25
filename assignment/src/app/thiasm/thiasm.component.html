@@ -1,0 +1,20 @@
+<div class="container">
+
+
+    <div class="card " *ngFor="let item of lists">
+        <div class="card-header">
+            {{item.Text}}
+        </div>
+        <div class="card-body">
+            <div class="card-body ">
+                <label class="container " *ngFor="let item2 of item.Answers ">
+                    <input type="radio" name="radio" value="{{item2.Id }}" [(ngModel)]="item._answerId">
+                    <span class="checkmark"> {{item2.Text}}</span>
+                </label>
+
+            </div>
+
+        </div>
+    </div>
+    <button class="btn btn-danger mt-3" (click)=submit()>Nộp Bài </button>
+</div>

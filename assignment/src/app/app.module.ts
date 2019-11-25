@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
-// import { NgxPaginationModule } from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
 import { DanhmucmonComponent } from './danhmucmon/danhmucmon.component';
 import { TracnghiemComponent } from './tracnghiem/tracnghiem.component';
@@ -16,6 +16,7 @@ import { ServicesasmComponent } from './servicesasm/servicesasm.component';
 import { TeacherasmComponent } from './teacherasm/teacherasm.component';
 import { SignupComponent } from './signup/signup.component';
 import { ContactasmComponent } from './contactasm/contactasm.component';
+import { ThiasmComponent } from './thiasm/thiasm.component';
 
 const appRoutes: Routes = [
   { path: 'assignment', component: AssignmentComponent },
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'danhmucmon', component: DanhmucmonComponent },
+  { path: 'danhmucmon/:Id', component: ThiasmComponent },
 
 
 ];
@@ -42,14 +44,15 @@ const appRoutes: Routes = [
     ServicesasmComponent,
     TeacherasmComponent,
     SignupComponent,
-    ContactasmComponent
+    ContactasmComponent,
+    ThiasmComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    // NgxPaginationModule,
+    NgxPaginationModule,
 
     RouterModule.forRoot(
       appRoutes,
